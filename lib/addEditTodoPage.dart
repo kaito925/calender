@@ -169,6 +169,7 @@ class AddEditTodoPage extends ConsumerWidget {
                                     ref.watch(endDateProvider);
                               }
                             }
+                            validateSave();
                             Navigator.pop(context);
                           },
                           padding: const EdgeInsets.symmetric(
@@ -244,6 +245,7 @@ class AddEditTodoPage extends ConsumerWidget {
                                     ref.watch(endDateTimeProvider).add(const Duration(hours: -1));
                               }
                             }
+                            validateSave();
                             Navigator.pop(context);
                           },
                           padding: const EdgeInsets.symmetric(
